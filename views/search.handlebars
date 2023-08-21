@@ -1,0 +1,34 @@
+ {{#if loggedIn}}
+<div class="row mt-4">
+    <div class="col-md-6">  
+      <form class="form new-project-form">
+        <div class="form-group">
+          <label for="anime-name"> name:</label>
+          <input class="form-input" type="text" id="anime-name" name="anime-name" />
+        </div>
+        <div class="form-group">
+          <label for="anime-genre">genre:</label>
+          <input class="form-input" type="text" id="anime-genre" name="anime-genre" />
+        </div>
+        <div class="form-group">
+          <label for="anime-type">type:</label>
+          <textarea class="form-input" id="anime-type" name="anime-type"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+      <p>Note: You need to enter a name and/or genre</p>
+      <p>Putting multiple Genres and Types must be seperated by a comma</p>
+      <p>Genre Options: Action, Suspense, Horror, Avant Garde, Sports, Supernatural,
+        Fantasy, Gourmet, Drama, Comedy, Mystery, Slice of Life, Adventure, Romance, Sci-fi
+      </p>
+      <p>Type Options:TV, Movie, OVA
+      </p>
+    </div>
+    <div id="anime-results"></div>
+</div>
+<script src="/js/anime-search.js"></script>
+ {{else}}
+ <h2>To access anime search, you need to sign in.</h2>
+{{/if}}

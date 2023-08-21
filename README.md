@@ -1,1 +1,1 @@
-# weeb-beta
+# Weeaboo-Wisdom
